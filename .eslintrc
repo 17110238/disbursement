@@ -1,0 +1,46 @@
+{
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true,
+      "modules": true
+    },
+    "ecmaVersion": 7,
+    "sourceType": "module"
+  },
+  "plugins": ["import", "react-hooks"],
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "globals": {
+    "fetch": true,
+    "expect": true,
+    "setupTest": true
+  },
+  "env": {
+    "es6": true,
+    "mocha": true,
+    "browser": true,
+    "jasmine": true
+  },
+  "rules": {
+    "no-console": "off",
+    "no-nested-ternary": "off",
+    "no-use-before-define": "off",
+    "no-restricted-syntax": "off",
+    "react/no-danger": "off",
+    "no-eval": "off",
+    "max-len": "off",
+    "no-plusplus": "off",
+    "no-bitwise": "off",
+    "camelcase": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}

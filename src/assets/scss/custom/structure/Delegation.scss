@@ -1,0 +1,20 @@
+
+body[data-delegation="delegation"] {
+    #delegation-user {
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin-bottom: 0px;
+        .content {
+            width: 100%;
+            display: flex;
+            height: inherit;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 28px;
+        }
+    }
+}

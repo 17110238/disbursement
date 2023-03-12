@@ -1,0 +1,220 @@
+//Fonts
+@import 'custom/fonts/fonts';
+
+//Core files
+@import './node_modules/bootstrap/scss/functions';
+@import './node_modules/bootstrap/scss/variables';
+@import './Variables.scss';
+@import './node_modules/bootstrap/scss/mixins.scss';
+
+// Structure
+@import 'custom/structure/Topbar.scss';
+@import 'custom/structure/Footer.scss';
+@import 'custom/structure/RightSidebar.scss';
+@import 'custom/structure/Vertical.scss';
+@import 'custom/structure/HorizontalNav.scss';
+@import 'custom/structure/Layouts.scss';
+@import 'custom/structure/Delegation.scss';
+
+// Components
+@import 'custom/components/Helper.scss';
+@import 'custom/components/Loading';
+@import 'custom/components/Notify.scss';
+
+// Plugins
+@import 'custom/plugins/CustomScrollbar';
+@import 'custom/plugins/Datepicker';
+@import 'custom/plugins/Datatable';
+
+// Pages
+@import 'custom/pages/Authentication';
+@import 'custom/pages/Dashboard';
+@import 'custom/pages/Delegation.scss';
+
+body::-webkit-scrollbar {
+  width: 14px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: white; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(186, 186, 186); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid white; /* creates padding around scroll thumb */
+}
+
+.button {
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: center;
+  padding: 0.8em 1em;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
+  text-underline-offset: 1px;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  min-width: 150px;
+  margin: 0 20px;
+  word-break: break-word;
+  border: 0;
+
+  &.btn-cancel {
+    background-color: #ec4561;
+    color: #ffffff;
+    border: 2px solid #e5435b;
+    &:focus,
+    &:active {
+      background-color: #da1f41;
+      border: 2px solid #e5435b;
+      outline: none;
+      box-shadow: none !important;
+    }
+    &:hover {
+      background-color: #da1f41;
+      color: #fff;
+      border: 2px solid #da1f41;
+    }
+  }
+
+  &.btn-save {
+    background-color: #ffcb05;
+    border: 2px solid #ffcb05;
+    color: #003946;
+    &:focus,
+    &:active {
+      background-color: rgb(237, 180, 25);
+      border: 2px solid #ffcb05;
+      outline: none;
+      box-shadow: none !important;
+    }
+    &:hover {
+      background-color: #f9c22d;
+      color: #003946;
+      border: 2px solid #eaab00;
+    }
+  }
+
+  &.btn-search {
+    background-color: #f8bd40;
+    &:focus,
+    &:active {
+      border-bottom-style: none;
+      border-color: #dadada;
+      box-shadow: rgba(0, 0, 0, 0.3) 0 3px 3px inset;
+      outline: 0;
+    }
+    &:hover {
+      border-bottom-style: none;
+      border-color: #dadada;
+      background-color: #f3c83d;
+    }
+  }
+
+  &.btn-submit {
+    background-color: #469b38;
+    color: #ffffff;
+    white-space: nowrap;
+    border: 2px solid #469b38;
+    &:focus,
+    &:active {
+      background-color: #367e2a;
+      border: 2px solid #469b38;
+      outline: none;
+      box-shadow: none !important;
+    }
+    &:hover {
+      background-color: #367e2a;
+      color: #fff;
+      border: 2px solid #367e2a;
+    }
+  }
+
+  &.btn-light {
+    background-color: $sidebar-dark-menu-item-active-color;
+    font-weight: 400;
+    width: 100px;
+    padding: 10px;
+  }
+
+  &.btn-confirm {
+    background-color: $white;
+    border: 1px solid $sidebar-menu-item-active-color;
+    color: $sidebar-menu-item-active-color;
+    font-weight: 400;
+    width: 100px;
+    padding: 10px;
+  }
+}
+
+.css-1vfvqvk-control {
+  border: 1px solid #ccc;
+  .css-lr9fot-singleValue {
+    color: #000 !important;
+  }
+}
+
+.css-1dimb5e-singleValue,
+.css-olqui2-singleValue,
+.css-j6087a-MultiValueGeneric {
+  color: $sidebar-menu-item-active-color !important;
+  font-weight: 500 !important;
+}
+
+.calendar-box {
+  .calendar-input {
+    background-color: transparent;
+    z-index: 10;
+    padding: 7px 10px;
+    color: $sidebar-menu-item-active-color;
+    font-weight: 500;
+  }
+  .calendar-icon {
+    font-size: 22px;
+    margin-left: -31px;
+    margin-top: 8px;
+    z-index: 0;
+  }
+}
+
+.no-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  img {
+    width: 200px;
+  }
+}
+
+.radio-toolbar input[type='radio'] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+.radio-toolbar label {
+  display: inline-block;
+  background-color: $gray-300;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.radio-toolbar input[type='radio']:checked + label {
+  background-color: $primary;
+  border: none;
+  color: $white;
+}
+
+#radio-title {
+  margin-bottom: 5px;
+}
