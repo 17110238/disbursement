@@ -5,7 +5,38 @@
 
 // Light Theme
 @import './bootstrap.scss';
-@import './app.scss';
+// @import './app.scss';
+//Core files
+@import 'custom/fonts/fonts';
+
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'Variables.scss';
+@import 'node_modules/bootstrap/scss/mixins.scss';
+
+// Structure
+@import 'custom/structure/Topbar.scss';
+@import 'custom/structure/Footer.scss';
+@import 'custom/structure/RightSidebar.scss';
+@import 'custom/structure/Vertical.scss';
+@import 'custom/structure/HorizontalNav.scss';
+@import 'custom/structure/Layouts.scss';
+@import 'custom/structure/Delegation.scss';
+
+// Components
+@import 'custom/components/Helper.scss';
+@import 'custom/components/Loading';
+@import 'custom/components/Notify.scss';
+
+// Plugins
+@import 'custom/plugins/CustomScrollbar';
+@import 'custom/plugins/Datepicker';
+@import 'custom/plugins/Datatable';
+
+// Pages
+@import 'custom/pages/Authentication';
+@import 'custom/pages/Dashboard';
+@import 'custom/pages/Delegation.scss';
 //@import "~candela-sass/candela-palette.scss";
 
 body {
