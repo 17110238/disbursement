@@ -1,12 +1,12 @@
-@import "./Icons.scss";
+@import './Icons';
 
 // Dark Theme
 // @import "./BootstrapDark.scss";
 // @import "./AppDark.scss";
 
 // Light Theme
-@import "./Bootstrap.scss";
-@import "./App.scss";
+@import './Bootstrap.scss';
+@import './App.scss';
 //@import "~candela-sass/candela-palette.scss";
 
 body {
@@ -26,7 +26,7 @@ body {
   }
 }
 
-.card, 
+.card,
 .card-body {
   border: 0 solid #f1f5f7;
   border-radius: 0.25rem;
@@ -35,11 +35,11 @@ body {
 
 .fa,
 .fas {
-  font-family: "sunlife-sans-bold", "Helvetica Neue", "Calibri";
+  font-family: 'sunlife-sans-bold', 'Helvetica Neue', 'Calibri';
   font-weight: 900;
 }
-[class*=" ti-"],
-[class^="ti-"] {
+[class*=' ti-'],
+[class^='ti-'] {
   font-family: themify;
   // speak: none;
   font-style: normal;
@@ -183,8 +183,7 @@ span.flatpickr-weekday {
   border: 0;
   font-size: 10px;
   padding: 1.35rem 1.25rem;
-  background: transparent escape-svg($btn-close-bg-dark) center /
-    $btn-close-width auto no-repeat;
+  background: transparent escape-svg($btn-close-bg-dark) center / $btn-close-width auto no-repeat;
   position: absolute;
   top: 0;
   right: 0;
